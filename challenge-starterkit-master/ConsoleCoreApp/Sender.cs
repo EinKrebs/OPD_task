@@ -25,7 +25,7 @@ namespace ConsoleCoreApp
                 "shape" => ShapeSolver.GetAnswer(task),
                 "determinant" => MatrixDetSolver.GetAns(task),
                 "cypher" => Caesar.GetAns(task),
-                "string-number" => StringNumber.GetNumber(task),
+                "string-number" => StringNumber.StringToNumber(task),
                 "starter" => "42",
                 "json" => Json.GetAnswer(task),
                 "inverse-matrix" => InverseMatrix.GetAnswer(task),
