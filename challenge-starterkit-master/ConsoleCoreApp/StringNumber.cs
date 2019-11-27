@@ -89,7 +89,7 @@ namespace ConsoleCoreApp
             var result = 0L;
             var currentCombination = 0;
             var index = startIndex;
-            while(true)
+            while(index <= words.Length)
             {
                 var currentDigit = HandleWord(words[index]);
                 if (currentDigit == -1)
