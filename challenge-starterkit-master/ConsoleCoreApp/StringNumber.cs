@@ -123,6 +123,16 @@ namespace ConsoleCoreApp
                     case "squared":
                         result *= result;
                         break;
+                    case "twice":
+                        result *= 2;
+                        break;
+                    case "trice":
+                        result *= 3;
+                        break;
+                    case "qubed":
+                        result *= result;
+                        result *= result;
+                        break;
                     default:
                         throw new Exception("undefined sign");
                 }
