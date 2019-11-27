@@ -19,7 +19,7 @@ namespace ConsoleCoreApp
                 if (tuple.Item2 - index > 0)
                     numbers.Add(number);
                 if (tuple.Item2 < words.Length)
-                    signs.Add(words[index]);
+                    signs.Add(words[tuple.Item2]);
                 index = tuple.Item2 + 1;
             }
 
@@ -89,7 +89,7 @@ namespace ConsoleCoreApp
             var result = 0L;
             var currentCombination = 0;
             var index = startIndex;
-            while(index <= words.Length)
+            while(index < words.Length)
             {
                 var currentDigit = HandleWord(words[index]);
                 if (currentDigit == -1)
@@ -123,6 +123,9 @@ namespace ConsoleCoreApp
                     case "squared":
                         result *= result;
                         break;
+                    case "sqared":
+                        result *= result;
+                        break;
                     case "twice":
                         result *= 2;
                         break;
@@ -134,7 +137,7 @@ namespace ConsoleCoreApp
                         result *= result;
                         break;
                     default:
-                        throw new Exception("undefined sign");
+                        throw new Exception("undefined sign " + sign);
                 }
             }
 
